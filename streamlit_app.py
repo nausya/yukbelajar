@@ -91,7 +91,7 @@ def main() :
   with tab1:
      st.radio("Select one:", [1, 2])
   
-  st.bar_chart(house)
+  st.line_chart(house)
  
 
   
