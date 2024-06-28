@@ -71,16 +71,16 @@ def main() :
 
   #sidebar 
   with st.form("Data Diri"):
-     st.write("Inside the form")
-     slider_val = st.slider("Form slider")
-     checkbox_val = st.checkbox("Form checkbox")
+     st.write("Area di dalam form")
+     slider_val = st.slider("Pilih Angka")
+     checkbox_val = st.checkbox("Setuju")
 
      #Every form must have a submit button.
-     submitted = st.form_submit_button("Submit")
+     submitted = st.form_submit_button("Simpan")
      if submitted:
-         st.write("slider", slider_val, "checkbox", checkbox_val)
+         st.write("Angka dipilih", slider_val, "checkbox", checkbox_val)
 
-  st.write("Outside the form")
+  st.write("Area di luar form")
 
 if __name__ == '__main__' : 
   main()
