@@ -90,8 +90,9 @@ def main() :
   # You can also use "with" notation:
   with tab1:
      st.radio("Select one:", [1, 2])
+  
+  st.bar_chart(house)
  
-
 
   
 if __name__ == '__main__' : 
