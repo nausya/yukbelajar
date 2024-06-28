@@ -63,6 +63,11 @@ def main() :
   with col3:
       st.header("An owl")
       st.image("https://static.streamlit.io/examples/owl.jpg")
-
+  
+  #expander 
+  #dengan with atau dengan assignment 
+  expander = st.expander("Klik Untuk Detail ")
+  expander.write('Anda Telah Membuka Detail')
+  
 if __name__ == '__main__' : 
   main()
