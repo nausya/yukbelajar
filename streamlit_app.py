@@ -90,7 +90,12 @@ def main() :
   # You can also use "with" notation:
   with tab1:
      st.radio("Select one:", [1, 2])
-
+ 
+ # Show a spinner during a process
+ with st.spinner(text="In progress"):
+    time.sleep(3)
+    st.success("Done")
+  
   # Show and update progress bar
   bar = st.progress(50)
   time.sleep(3)
