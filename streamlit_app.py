@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd 
 from st_aggrid import AgGrid
 
-house = pd.read_csv('house_clean.csv')
+house = pd.read_csv('house_clean.csv', usecols=['id','price'])
 
 
 def main() : 
