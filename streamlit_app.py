@@ -6,6 +6,7 @@ house = pd.read_csv('house_clean.csv')
 
 
 def main() : 
+  ##### Untuk olah text
   st.header('Halaman Streamlit Dwi A')
   st.subheader('This is SubHeader')
   st.markdown('# Rendering Markdown ')
@@ -14,12 +15,22 @@ def main() :
 
   st.dataframe(house)
 
+  ##### Untuk menulis metric
   st.write('Metrics')
   st.metric(label="Temperature", value="70 °F", delta="-1.2 °F")
+  
+  ##### Untuk menampilkan Grid -- masih blm tampil
   st.write('Menampilkan Dataframe dengan St AgGrid')
   AgGrid(house)
   
   st.table([x for x in range(1,5)])
-  
+  click_me_btn = st.button('Click Me')
+
+  ##### Untuk membuat button
+  st.write(click_me_btn) #Return True kalo di Click 
+  check_btn = st.checkbox('Klik Jika Setuju')
+  if check_btn :
+      st.write('Anda Setuju')
+      
 if __name__ == '__main__' : 
   main()
