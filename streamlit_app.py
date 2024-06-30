@@ -19,7 +19,7 @@ def main() :
         predict = model.predict(
             [[year, mileage, tax, mpg, engineSize]]
         )
-        predict = predict[0]
+        predict = int(predict[0])
         st.write ('Estimasi harga mobil bekas dalam Ponds : ', predict)
         st.write ('Estimasi harga mobil bekas dalam IDR (Juta) :', predict*16500)
   
